@@ -17,7 +17,7 @@
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/d2spr/d2spr-vendor.mk)
 
-## overlays
+## Inherit d2bst overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/d2bst/overlay
 
 # Inherit from d2-common
