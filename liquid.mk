@@ -9,8 +9,8 @@ $(call inherit-product, vendor/liquid/config/common_phone.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=d2bst \
     TARGET_DEVICE=d2bst \
-    BUILD_FINGERPRINT="samsung/d2bst/d2bst:4.4.2/KOT49H/L710TVPU0ANF4:user/release-keys" \
-    PRIVATE_BUILD_DESC="d2bst-user 4.4.2 KOT49H L710TVPU0ANF4 release-keys"
+    BUILD_FINGERPRINT="samsung/d2bst/d2bst:5.0.2/LRX22G/L710TVPU0ANF4:user/release-keys" \
+    PRIVATE_BUILD_DESC="d2bst-user 5.0.2 LRX22G L710TVPU0ANF4 release-keys"
 
 PRODUCT_NAME := liquid_d2bst
 PRODUCT_DEVICE := d2bst
