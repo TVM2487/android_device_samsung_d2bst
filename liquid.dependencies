@@ -30,9 +30,9 @@
         "revision": "lollipop"
     },
     {
-        "remote": "tm",
-        "repository": "proprietary_vendor_samsung",
+        "remote": "lsd",
+        "repository": "proprietary_vendor_samsung_d2bst",
         "target_path": "vendor/samsung",
-        "revision": "cm-12.0"
+        "revision": "lollipop"
     }
 ]
