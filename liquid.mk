@@ -1,11 +1,11 @@
-# Inherit some common LiquidSmooth stuff
-$(call inherit-product, vendor/liquid/config/common_phone.mk)
+# Inherit device specific last
+$(call inherit-product, device/samsung/d2bst/full_d2bst.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
 
-# Inherit device specific last
-$(call inherit-product, device/samsung/d2bst/full_d2bst.mk)
+# Inherit some common LiquidSmooth stuff
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=d2bst \
