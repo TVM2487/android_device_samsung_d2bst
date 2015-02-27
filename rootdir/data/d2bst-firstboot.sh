@@ -6,13 +6,6 @@ do
   sleep 5
 done
 
-busybox mount -o remount,rw /system
-
-# Move in Boost Mobile apns
-busybox rm /system/etc/apns-conf.xml
-busybox cp /system/apns-conf.xml /system/etc/apns-conf.xml
-busybox rm /system/apns-conf.xml
-
 # Move in Boost Mobile eri
 busybox mv /system/etc/eri-boost.xml /data/eri.xml
 
@@ -24,7 +17,6 @@ busybox chmod 666 /data/eri.xml
 busybox mkdir -p /data/data/com.android.providers.telephony/shared_prefs
 busybox cp /system/preferred-apn1.xml /data/data/com.android.providers.telephony/shared_prefs/preferred-apn1.xml
 busybox rm /system/preferred-apn1.xml
-
 
 # Set correct telephony permissions
 busybox chown radio:radio /data/data/com.android.providers.telephony/shared_prefs/preferred-apn1.xml
@@ -43,5 +35,3 @@ svc data enable
 # clean up
 rm -f /system/d2bst-firstboot.sh
 rm -f /system/etc/init.d/99d2bst
-
-busybox mount -o remount,ro /system
